@@ -9,11 +9,13 @@ Rails.application.routes.draw do
 
   get("/square_root/results", controller: "square_root", action: "square_root_results")
 
+  get("/random/new", controller: "random", action: "random_new")
+
+  get("/random/results", controller: "random", action: "random_results")
+
   # get("/payment/new")
 
   # get("/payment/results")
 
-  # get("/random/new")
-
-  # get("/random/results")
+  
 end

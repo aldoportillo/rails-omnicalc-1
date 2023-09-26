@@ -6,10 +6,10 @@ class RandomController < ApplicationController
 
   def random_results
     
-    @minimum = params.fetch("user_min").to_i
-    @maximum = params.fetch("user_max").to_i
+    @minimum = params.fetch("user_min").to_f
+    @maximum = params.fetch("user_max").to_f
 
-    @random = rand(@minimum..@maximum)
+    @result = rand(@minimum..@maximum)
 
 
     render({:template => "/result_templates/random"})
