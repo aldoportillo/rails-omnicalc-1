@@ -1,4 +1,4 @@
-class SquareController < ApplicationController
+class SquareRootController < ApplicationController
 
   def square_root_new
     render({:template => "/form_templates/square_root"})
